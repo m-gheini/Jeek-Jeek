@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  text-align: center;  
+  font-family: verdana;
+}
+
+header {
+    padding: 10px;
+    width: 500px;
+    margin: auto;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    background-color: white;
+    text-align: center;
+}
+
+footer {
+  padding: 10px;
+  width: fit-content;
+  margin: auto;
+  color: black;
+  background-color: lightgreen;
+  text-align: center;
+}
+
+#myHeader {
+  padding: 35px;
+  width: fit-content;
+  margin: auto;
+  color: orange;
+  background-color: lightgreen;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; 
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#Upblank {
+  padding: 43px;
+  width: fit-content;
+  color: white;
+  background-color: white;
+
+}
+ 
+#Downblank {
+  padding: 10px;
+  width: fit-content;
+  color: white;
+  background-color: white;
+}
+
+button{
+  background-color: lightblue;
+  border-radius: 50%;
+  color: black;
+  width: 25%;
+  padding: 15px;
+  margin: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#Errorbox {
+    background-color: white;
+    color: red;
+    width: 300px;
+    padding: 15px;
+    margin: auto;
+}
+
+div{
+  background-color: white; 
+  padding: 0px; 
+  width: 520px;
+  margin: auto;
+  outline-style: outset;
+  outline-color: blue;
+  outline-width: thick;
+}
+}
+</style>
+</head>
+<body>
+  <h1 id="myHeader">JeekJeek</h1>
+  <h1 id="Upblank"></h1>
+    <div>
+      <header>
+        <h1>SIGN UP</h1>
+      </header>
+        <img src="/signup_icon" style="width:45%; padding-top: 10px; ">
+        <div id="Errorbox">There is an user with this username already!</div>
+          <form action="/login" method="post">
+            <input name="username" type="text" placeholder="Username" style="display:block; margin:25px auto ; padding: 7px;" />
+            <input name="displayname" type="text" placeholder="Display Name" style="display:block; margin:25px auto ; padding: 7px;" />
+            <input name="password" type="password" placeholder="Password" style="display:block; margin:25px auto ; padding: 7px;" />
+            <button type="submit">Sign up</button>
+          </form>
+    </div>
+  <h1 id="Downblank"></h1>
+  <footer>Copyright &copy; JeekJeek.com</footer>
+
+</body>
+</html>

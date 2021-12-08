@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{ 
+text-align: center;  
+  font-family: verdana;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+footer {
+  padding: 10px;
+  width: fit-content;
+  margin: auto;
+  color: black;
+  background-color: lightgreen;
+  text-align: center;
+}
+
+#myHeader {
+  padding: 35px;
+  width: fit-content;
+  margin: auto;
+  color: black;
+  background-color: lightgreen;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; 
+}
+
+#Upblank {
+  padding: 35px;
+  width: fit-content;
+  color: white;
+  background-color: white;
+
+}
+ 
+#Downblank {
+  padding: 38px;
+  width: fit-content;
+  color: white;
+  background-color: white;
+}
+div{
+  background-color: white; 
+  padding: 0px; 
+  width: 520px;
+  margin: auto;
+  outline-style: outset;
+  outline-color: blue;
+  outline-width: thick;
+}
+}
+</style>
+</head>
+-----------
+<body>
+  <h1 id="myHeader">JeekJeek</h1>
+  <form>
+    <input type="text" name="search" placeholder="Search..">
+  </form>
+  <h1 id="Upblank">blank</h1>
+    <div>
+      <header>
+        <h1>LOGIN</h1>
+      </header>
+        <img src="/user_icon" style="width:25%; padding-top: 10px; ">
+          <form action="/login" method="get">
+            <input name="username" type="text" placeholder="Username" style="display:block; margin:25px auto ; padding: 7px;" />
+            <input name="password" type="password" placeholder="Password" style="display:block; margin:25px auto ; padding: 7px;" />
+            <button type="submit" style="width: 25%; margin: 25px; padding: 10px; background-color: lightblue; border-radius: 100px;">Login</button>
+          </form>
+        <a href="/sign_up" style="text-align: center; color: blue; padding-bottom: 7px;">New User? Sign up!</a>
+    </div>
+  <h1 id="Downblank">blank</h1>
+  <footer>Copyright &copy; JeekJeek.com</footer>
+
+</body>
+</html>
+
